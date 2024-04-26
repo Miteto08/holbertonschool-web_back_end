@@ -4,7 +4,7 @@
 mandatory"""
 
 
-def floor(n: float) -> float:
+def floor(n: float) -> int:
     """function that takes takes a float n as argument
     and returns the floor of the float."""
-    return int(n)
+    return (int(n))
