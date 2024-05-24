@@ -1,7 +1,7 @@
-$ cat base_caching.py
 #!/usr/bin/python3
 """ BaseCaching module
 """
+
 
 class BaseCaching():
     """ BaseCaching defines:
@@ -31,4 +31,3 @@ class BaseCaching():
         """ Get an item by key
         """
         raise NotImplementedError("get must be implemented in your cache class")
-    
