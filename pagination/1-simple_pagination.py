@@ -43,3 +43,4 @@ class Server:
             return self.dataset()[start:end]
         except IndexError:
             return []
+        
