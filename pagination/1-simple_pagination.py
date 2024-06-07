@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+
 '''Simple pagination
 Mandatory
 '''
@@ -43,4 +44,3 @@ class Server:
             return self.dataset()[start:end]
         except IndexError:
             return []
-        
