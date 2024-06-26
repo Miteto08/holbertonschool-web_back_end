@@ -3,7 +3,7 @@
    5. Encrypting passwords
    6. Check valid password
 '''
-import bcrypt  # type: ignore
+import bcrypt
 
 
 def hash_password(password: str) -> bytes:

@@ -7,7 +7,7 @@ Mandatory - Regex-ing
 import re
 from typing import List
 import logging
-import mysql.connector  # type: ignore
+import mysql.connector
 from os import getenv
 
 
