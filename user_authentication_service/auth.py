@@ -13,6 +13,7 @@ def _hash_password(password: str) -> str:
     """ Returns a salted hash of the input password """
     return hashpw(password.encode('utf-8'), gensalt())
 
+
 class Auth:
     """Auth class to interact with the authentication database.
     """
