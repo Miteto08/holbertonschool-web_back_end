@@ -3,9 +3,8 @@
     Parametrize templates """
 from flask import Flask, render_template, request
 from flask_babel import Babel, gettext
-
 app = Flask(__name__)
-babel = Babel(app)
+babel = Babel(app, locale_selector=get_locale)
 """ instantiate the Babel object """
 
 
