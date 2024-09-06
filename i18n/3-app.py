@@ -2,7 +2,14 @@
 """ Basic Flask app, Basic Babel setup, Get locale from request,
     Parametrize templates """
 from flask import Flask, render_template, request
-from flask_babel import Babel, gettext, get_locale
+from flask_babel import Babel, gettext
+
+
+def get_locale():
+    """ to determine the best match with our supported languages """
+    return request.accept_languages.best_match(app.config['LANGUAGES'])
+
+
 app = Flask(__name__)
 babel = Babel(app, locale_selector=get_locale)
 """ instantiate the Babel object """
@@ -23,11 +30,6 @@ app.config.from_object(Config)
 def root():
     """ basic Flask app """
     return render_template("3-index.html")
-
-
-def get_locale():
-    """ to determine the best match with our supported languages """
-    return request.accept_languages.best_match(app.config['LANGUAGES'])
 
 
 if __name__ == "__main__":
