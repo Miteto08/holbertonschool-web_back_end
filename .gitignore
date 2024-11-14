@@ -1,0 +1,7 @@
+names.sql
+*.pyc
+*.zip
+node_modules
+*/nodesource_setup.sh
+*/package-lock.json
+ES6_classes/package-lock.json
