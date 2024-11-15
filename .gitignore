@@ -5,3 +5,4 @@ node_modules
 */nodesource_setup.sh
 */package-lock.json
 ES6_classes/package-lock.json
+MySQL_Advanced/tmp_res
