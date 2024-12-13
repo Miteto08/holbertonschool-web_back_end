@@ -6,3 +6,5 @@ node_modules
 */package-lock.json
 ES6_classes/package-lock.json
 MySQL_Advanced/tmp_res
+*/redis-6.0.10
+*/*.tar.gz
